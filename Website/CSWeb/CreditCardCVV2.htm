@@ -1,0 +1,313 @@
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<style type="text/css">
+.ucDefault {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucColorHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #cc0000; FONT-FAMILY: Arial
+}
+.ucColorSubHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #cc0000; FONT-FAMILY: Arial
+}
+.ucSuggestedItemsHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial
+}
+.ucSuggestedItemsText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucCouponHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial
+}
+.ucCouponText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucCouponField {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucReferralCodeHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial
+}
+.ucReferralCodeField {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucFormLabel {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucFormLabelPaymentPreference {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucFormText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucFormTextBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucFormField {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucWholesaleAgreement {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucRemoveButton {
+	BACKGROUND-IMAGE: url(checkout/removeItem.gif); WIDTH: 11px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 10px
+}
+.ucRemoveButtonOverlay {
+	WIDTH: 11px; HEIGHT: 10px
+}
+.ucSubmitButton {
+	BACKGROUND-IMAGE: url(checkout/images/submit.gif); WIDTH: 62px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucSubmitButtonOverlay {
+	WIDTH: 62px; HEIGHT: 18px
+}
+.ucContinueCheckoutButton {
+	BACKGROUND-IMAGE: url(checkout/images/continueCheckout.gif); WIDTH: 123px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucContinueCheckoutButtonOverlay {
+	WIDTH: 123px; HEIGHT: 18px
+}
+.ucContinueShoppingButton {
+	BACKGROUND-IMAGE: url(checkout/images/continueShopping.gif); WIDTH: 124px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucContinueShoppingButtonOverlay {
+	WIDTH: 124px; HEIGHT: 18px
+}
+.ucUpdateButton {
+	BACKGROUND-IMAGE: url(checkout/images/update.gif); WIDTH: 67px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucUpdateButtonOverlay {
+	WIDTH: 68px; HEIGHT: 21px
+}
+.ucAddToCartButton {
+	BACKGROUND-IMAGE: url(checkout/images/addToCart.gif); WIDTH: 92px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucAddToCartButtonOverlay {
+	WIDTH: 92px; HEIGHT: 18px
+}
+.ucApplyCouponButton {
+	BACKGROUND-IMAGE: url(checkout/images/applyCoupon.gif); WIDTH: 97px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucApplyCouponButtonOverlay {
+	WIDTH: 97px; HEIGHT: 18px
+}
+.ucApplyCodeButton {
+	BACKGROUND-IMAGE: url(checkout/images/applyCode.gif); WIDTH: 85px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucApplyCodeButtonOverlay {
+	WIDTH: 85px; HEIGHT: 18px
+}
+.ucCheckoutButton {
+	BACKGROUND-IMAGE: url(checkout/images/checkout.gif); WIDTH: 79px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucCheckoutButtonOverlay {
+	WIDTH: 79px; HEIGHT: 18px
+}
+.ucContinueButton {
+	BACKGROUND-IMAGE: url(checkout/images/continue.gif); WIDTH: 68px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucContinueButtonOverlay {
+	WIDTH: 68px; HEIGHT: 18px
+}
+.ucFinalizeOrderButton {
+	BACKGROUND-IMAGE: url(checkout/images/finalizeOrder.gif); WIDTH: 95px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucFinalizeOrderButtonOverlay {
+	WIDTH: 95px; HEIGHT: 18px
+}
+.ucTableHeaderBackground {
+	BACKGROUND-COLOR: #bbbbbb
+}
+.ucTableHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333
+}
+.ucTableBorderBackground {
+	BACKGROUND-COLOR: #000000
+}
+.ucTableItemLightBackground {
+	BACKGROUND-COLOR: #eeeeee
+}
+.ucTableItemDarkBackground {
+	BACKGROUND-COLOR: #dddddd
+}
+.ucShoppingBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.ucShoppingCartText {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+.ucShoppingCartNoItemText {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333; FONT-STYLE: italic; FONT-FAMILY: Arial
+}
+.ucShoppingCartDiscountText {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+.ucShoppingCartHighlightText {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #990000
+}
+.ucShoppingCartOptionField {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+.ucShoppingCartField {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+.ucSmall {
+	FONT-SIZE: 10px
+}
+.ucReviewShippingInfoBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.ucReviewSummaryBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.ucApproximateShippingHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial
+}
+.ucApproximateShippingText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucApproximateShippingDiscountText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, sans-serif
+}
+.ucErrorMessageBorder {
+	BACKGROUND-COLOR: #dd9988
+}
+.ucErrorMessageBackground {
+	BACKGROUND-COLOR: #ffffd5
+}
+.ucErrorMessageText {
+	COLOR: #990000
+}
+.ucErrorMessageIcon {
+	BACKGROUND-IMAGE: url(checkout/images/error.gif); WIDTH: 17px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px
+}
+.ucInfoMessageBorder {
+	BACKGROUND-COLOR: #dd9988
+}
+.ucInfoMessageBackground {
+	BACKGROUND-COLOR: #ffffd5
+}
+.ucInfoMessageText {
+	COLOR: #990000
+}
+.ucInfoMessageIcon {
+	BACKGROUND-IMAGE: url(checkout/images/info.gif); WIDTH: 17px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px
+}
+.ucUseThisAddressButton {
+	BACKGROUND-IMAGE: url(checkout/images/useThisAddress.gif); WIDTH: 116px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucUseThisAddressButtonOverlay {
+	WIDTH: 116px; HEIGHT: 18px
+}
+.ucReviewAddressText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSpecialInstructionText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucReturnPolicyText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucProgressBar {
+	BACKGROUND-IMAGE: url(checkout/progress.gif); WIDTH: 146px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 12px
+}
+.ucProgressBarOverlay {
+	WIDTH: 146px; HEIGHT: 12px
+}
+.ucProgressText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucReviewGiftMessageBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.ucGiftMessageText {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial; BACKGROUND-COLOR: #eeeeee
+}
+.ucSearchResultItemManufacturerName {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultItemManufacturerSku {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultItemNumber {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultItemDescription {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultPaging {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultItemPrice {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Verdana, Geneva, Helvetica, sans-serif
+}
+.ucSearchResultContinueShoppingButton {
+	BACKGROUND-IMAGE: url(checkout/images/continueShopping.gif); WIDTH: 124px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucSearchResultContinueShoppingButtonOverlay {
+	WIDTH: 124px; HEIGHT: 18px
+}
+.ucSearchResultBuyButton {
+	BACKGROUND-IMAGE: url(checkout/images/buy.gif); WIDTH: 92px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucSearchResultBuyButtonOverlay {
+	WIDTH: 92px; HEIGHT: 18px
+}
+.ucSearchResultMoreInfoButton {
+	BACKGROUND-IMAGE: url(checkout/images/moreInfo.gif); WIDTH: 92px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.ucSearchResultMoreInfoButtonOverlay {
+	WIDTH: 92px; HEIGHT: 18px
+}
+.ucUpsellYesButton {
+	BACKGROUND-IMAGE: url(checkout/images/upsellYes.gif); WIDTH: 82px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 45px
+}
+.ucUpsellYesButtonOverlay {
+	WIDTH: 82px; HEIGHT: 45px
+}
+.ucUpsellNoButton {
+	BACKGROUND-IMAGE: url(checkout/images/upsellNo.gif); WIDTH: 82px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 45px
+}
+.ucUpsellNoButtonOverlay {
+	WIDTH: 82px; HEIGHT: 45px
+}
+
+</style>
+<META content="MSHTML 6.00.6000.16705" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width=260 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=ucColorSubHeader colSpan=5>American Express</TD></TR>
+        <TR>
+          <TD>
+            <DIV class=ucDefault>The American Express verification number is a 
+            4-digit number printed on the front of your card. It appears after 
+            and to the right of your card number. </DIV>
+            <P>
+            <CENTER><IMG 
+        src="/Content/Images/amexCard.gif"></CENTER><BR></TD></TR></TBODY></TABLE></TD>
+    <TD><IMG height=2 src="" width=30 border=0></TD>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width=260 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=ucColorSubHeader colSpan=5>Discover / MasterCard / 
+        Visa</TD></TR>
+        <TR>
+          <TD>
+            <DIV class=ucDefault>The verification number is a 3-digit number 
+            printed on the back of your card. It is the last three digits in the 
+            signature panel. </DIV>
+            <P>
+            <CENTER><IMG 
+        src="/Content/Images/otherCard.gif"></CENTER><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV align=center>
+<FORM><INPUT class=ucSubText onclick=window.close();return(false); type=button value="Close Window"></FORM></DIV></BODY></HTML>
