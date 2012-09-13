@@ -33,7 +33,7 @@
         // Begin Variable Declarations
         wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
         wa_pageName = location.pathname;  // you can customize the page name here
-        wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
+        wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
         // End Variable Declarations
         document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
         wa_rf = document.referrer; wa_sr = window.location.search;
@@ -88,7 +88,7 @@ screen.colorDepth + '&rs=' + escape(screen.width + ' x ' + screen.height) +
         // Begin Variable Declarations
         wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
         wa_pageName = location.pathname;  // you can customize the page name here
-        wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
+        wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
         // End Variable Declarations
         document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
         wa_rf = document.referrer; wa_sr = window.location.search;
@@ -115,11 +115,14 @@ screen.colorDepth + '&rs=' + escape(screen.width + ' x ' + screen.height) +
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
 
+    
+
     <script>
         var pageTracker = _gat._getTracker('UA-25351107-3');
         pageTracker._trackPageview();
-        pageTracker._addTrans('50147', '', '139.90', '0.00', '0.00', 'test', 'AA', 'US ');
-        pageTracker._addItem('50147', 'BEL3-90-WEB-C', 'Bellaplex Rejuvenating Treatment (2 Bellaplex) - One Pay', '', '139.9', '1');
+    
+    <asp:Literal ID="litGAReceiptPixel" runat="server" />    
+        
         pageTracker._trackTrans();
     </script>
 
@@ -203,7 +206,7 @@ screen.colorDepth + '&rs=' + escape(screen.width + ' x ' + screen.height) +
     // Begin Variable Declarations
     wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
     wa_pageName = location.pathname;  // you can customize the page name here
-    wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
+    wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
     // End Variable Declarations
     document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
     wa_rf = document.referrer; wa_sr = window.location.search;

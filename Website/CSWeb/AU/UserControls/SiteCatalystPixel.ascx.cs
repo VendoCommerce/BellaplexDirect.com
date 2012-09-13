@@ -7,18 +7,59 @@ using System.Web.UI.WebControls;
 using CSBusiness.Web;
 using CSBusiness.OrderManagement;
 using CSBusiness;
+using System.Text;
 
 namespace CSWeb.AU.UserControls
 {
     public partial class SiteCatalystPixel : System.Web.UI.UserControl
     {
-        protected void Page_Load(object sender, EventArgs e)
+        private ClientCartContext CartContext
         {
-            string s = CSWeb.OrderHelper.GetVersionName();            
+            get
+            {
+                return Session["ClientOrderData"] != null ? Session["ClientOrderData"] as ClientCartContext : null;
+            }
         }
+
+        protected string State
+        {
+            get
+            {
+                if (CartContext != null && CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
+                    return CartContext.CustomerInfo.ShippingAddress.StateProvinceName;
+
+                return string.Empty;
+            }
+        }
+
+        protected string ZipCode
+        {
+            get
+            {
+                if (CartContext != null && CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
+                    return CartContext.CustomerInfo.ShippingAddress.ZipPostalCode;
+
+                return string.Empty;
+            }
+        }
+
+        protected string OrderId
+        {
+            get
+            {
+                return CartContext != null ? CartContext.OrderId.ToString() : string.Empty;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {    
+        
+        }
+
         public static string GetVersionName()
         {
-            return CSWeb.OrderHelper.GetVersionName();
+            string version = CSWeb.OrderHelper.GetVersionName();
+            return string.IsNullOrEmpty(version) ? "A1" : version;
         }
 
         public string GetPageName(HttpContext context)
@@ -52,6 +93,8 @@ namespace CSWeb.AU.UserControls
 
             return _pageName;
         }
+
+        
     }
 
 

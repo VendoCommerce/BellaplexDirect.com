@@ -13,6 +13,7 @@ using CSCore.Utils;
 using CSCore.DataHelper;
 using CSBusiness.ShoppingManagement;
 using System.Web;
+using System.Linq;
 
 
 namespace CSWeb.AU.UserControls
@@ -162,10 +163,8 @@ namespace CSWeb.AU.UserControls
 
         public void BindShippingCountries(bool setValue)
         {
-            ddlShippingCountry.DataSource = CountryManager.GetActiveCountry();
-            ddlShippingCountry.DataBind();
-            if (setValue)
-                ddlShippingCountry.Items.FindByValue(ConfigHelper.DefaultCountry).Selected = true;
+            ddlShippingCountry.DataSource = CountryManager.GetActiveCountry().Where(x => x.Name == "Australia");
+            ddlShippingCountry.DataBind();            
         }
 
         /// <summary>
@@ -270,7 +269,7 @@ namespace CSWeb.AU.UserControls
                 }
                 else
                 {
-                    if (!CommonHelper.IsValidZipCode(txtShippingZipCode.Text))
+                    if (!CommonHelper.IsValidZipCodeAustralian(txtShippingZipCode.Text))
                     {
                         lblShippingZiPError.Text = ResourceHelper.GetResoureValue("ShippingZipCodeValidationErrorMsg");
                         lblShippingZiPError.Visible = true;

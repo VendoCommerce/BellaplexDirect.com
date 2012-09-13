@@ -28,7 +28,7 @@ namespace CSWeb.AU.Store{
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CSWeb.Root.UserControls.Header Header1;
+        protected global::CSWeb.AU.UserControls.Header Header1;
         
         /// <summary>
         /// form1 control.
@@ -46,7 +46,7 @@ namespace CSWeb.AU.Store{
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CSWeb.Root.UserControls.CardDecline ucCardDecline;
+        protected global::CSWeb.AU.UserControls.CardDecline ucCardDecline;
         
         /// <summary>
         /// Footer1 control.
@@ -55,7 +55,7 @@ namespace CSWeb.AU.Store{
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CSWeb.Root.UserControls.Footer Footer1;
+        protected global::CSWeb.AU.UserControls.Footer Footer1;
         
         /// <summary>
         /// TrackingPixels1 control.
@@ -64,6 +64,6 @@ namespace CSWeb.AU.Store{
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CSWeb.Root.UserControls.TrackingPixels TrackingPixels1;
+        protected global::CSWeb.AU.UserControls.TrackingPixels TrackingPixels1;
     }
 }

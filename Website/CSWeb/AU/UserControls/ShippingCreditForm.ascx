@@ -236,9 +236,9 @@
                                 <asp:Label ID="lblShippingZiPError" ForeColor="Red" runat="server" Text="" Font-Size="11px"
                                     Visible="false"></asp:Label></div>
                             <div class="left_field_wrap_2cl">
-                                Zip Code</div>
+                                Postal Code</div>
                                 <div class="left_field_wrap_2c">
-                            <asp:TextBox ID="txtShippingZipCode" TabIndex="117" runat="server" MaxLength="7"
+                            <asp:TextBox ID="txtShippingZipCode" TabIndex="117" runat="server" MaxLength="4"
                                 CssClass="text_field_1b"></asp:TextBox>
 
                                 </div>

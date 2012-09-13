@@ -7,14 +7,55 @@ using System.Web.UI.WebControls;
 using CSBusiness.Web;
 using CSBusiness.OrderManagement;
 using CSBusiness;
+using System.Text;
 
 namespace CSWeb.Root.UserControls
 {
     public partial class SiteCatalystPixel : System.Web.UI.UserControl
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {            
+        private ClientCartContext CartContext
+        {
+            get
+            {
+                return Session["ClientOrderData"] != null ? Session["ClientOrderData"] as ClientCartContext : null;
+            }
         }
+
+        protected string State
+        {
+            get
+            {
+                if (CartContext != null && CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
+                    return CartContext.CustomerInfo.ShippingAddress.StateProvinceName;
+
+                return string.Empty;
+            }
+        }
+
+        protected string ZipCode
+        {
+            get
+            {
+                if (CartContext != null && CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
+                    return CartContext.CustomerInfo.ShippingAddress.ZipPostalCode;
+
+                return string.Empty;
+            }
+        }
+
+        protected string OrderId
+        {
+            get
+            {
+                return CartContext != null ? CartContext.OrderId.ToString() : string.Empty;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {    
+        
+        }
+
         public static string GetVersionName()
         {
             string version = CSWeb.OrderHelper.GetVersionName();
@@ -52,6 +93,8 @@ namespace CSWeb.Root.UserControls
 
             return _pageName;
         }
+
+        
     }
 
 

@@ -8,6 +8,7 @@ using CSBusiness.Web;
 using CSBusiness.OrderManagement;
 using CSBusiness;
 using CSBusiness.Resolver;
+using System.Text;
 
 
 namespace CSWeb.Root.UserControls
@@ -114,6 +115,30 @@ namespace CSWeb.Root.UserControls
                 pnlPixels.Visible = false;
             }
 
+            if (pnlPixels.Visible)
+            {
+                // set GA pixels. Example:
+                /*
+                    pageTracker._addTrans('50147', '', '139.90', '0.00', '0.00', 'test', 'AA', 'US ');
+                    pageTracker._addItem('50147', 'BEL3-90-WEB-C', 'Bellaplex Rejuvenating Treatment (2 Bellaplex) - One Pay', '', '139.9', '1');
+                 * */
+
+                CSBusiness.CustomerManagement.Address address = CSResolve.Resolve<ICustomerService>().GetAddressById(CurrentOrder.BillingAddressId);
+
+                StringBuilder sbGAPixel = new StringBuilder();
+                sbGAPixel.AppendFormat("pageTracker._addTrans('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}' );\n", 
+                    CurrentOrder.OrderId.ToString(), "", Math.Round(CurrentOrder.Total, 2), Math.Round(CurrentOrder.Tax, 2), Math.Round(CurrentOrder.ShippingCost, 2),
+                    CurrentOrder.CustomerInfo.BillingAddress.City, CurrentOrder.CustomerInfo.BillingAddress.StateProvinceName, CurrentOrder.CustomerInfo.BillingAddress.CountryCode);
+
+                foreach (Sku sku in CurrentOrder.SkuItems)
+                {
+                    sbGAPixel.AppendFormat("pageTracker._addItem('{0}','{1}','{2}','{3}','{4}','{5}');\n", 
+                        CurrentOrder.OrderId.ToString(), sku.SkuCode, sku.LongDescription, "", 
+                        Math.Round(Convert.ToDouble(sku.InitialPrice), 2), sku.Quantity.ToString());
+                }
+
+                litGAReceiptPixel.Text = sbGAPixel.ToString();
+            }
         }
         private void SetHomePagePnl()
         {
@@ -166,7 +191,10 @@ namespace CSWeb.Root.UserControls
             if (Request.RawUrl.ToLower().Contains("receipt"))
             {
                 pnlReceiptPage.Visible = true;
-                SetCurrentOrder();                
+                SetCurrentOrder();
+
+
+
             }
 
         }
