@@ -7,7 +7,7 @@ using CSBusiness.Cache;
 using System.Collections.Generic;
 using CSBusiness;
 using System.Web.UI.WebControls;
-using CSWeb.AU.Store;
+using CSWeb.Root.Store;
 using System.Text;
 
 namespace CSWeb.AU.UserControls
@@ -60,10 +60,10 @@ namespace CSWeb.AU.UserControls
             if (orderId > 0)
             {
                 Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId);
-                
+
                 for (int i = 0; i < orderData.SkuItems.Count; i++)
                     orderData.SkuItems[i].LoadAttributeValues();
-                
+
                 dlordersList.DataSource = orderData.SkuItems;
                 dlordersList.DataBind();
                 LiteralSubTotal.Text = Math.Round(orderData.SubTotal, 2).ToString();

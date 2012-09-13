@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSWeb.AU.UserControls {
+namespace CSWeb.AU.UserControls{
     
     
     public partial class CheckoutThankYouModule {
-        
-        /// <summary>
-        /// Header1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::CSWeb.AU.UserControls.Header_Cart Header1;
         
         /// <summary>
         /// PanelMultiPay control.
@@ -56,5 +47,14 @@ namespace CSWeb.AU.UserControls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralPhone;
+        
+        /// <summary>
+        /// TrackingPixels control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CSWeb.Root.UserControls.TrackingPixels TrackingPixels;
     }
 }

@@ -1,22 +1,33 @@
 ﻿<%@Page Language="C#" AutoEventWireup="true" CodeBehind="PostSale.aspx.cs" Inherits="CSWeb.Root.Store.PostSale" EnableEventValidation="false" EnableSessionState="true" %>
 
-
+<%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
 <%@ Register Src="UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Keranique</title>
-    <link href="/Styles/cloudglobal.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="https://api5.thesearchagency.net/v2/a5/tsaapi.js" language="JavaScript"
-        type="text/javascript"></script>
-    <!-- add popup plugin -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/Scripts/fancybox/jquery.fancybox.pack.js"></script>
-    <link href="/Scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"
-        media="all" />
-    <script type="text/javascript" src="/Scripts/global.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Order Bellaplex Now! - Wrinkle Reduction &amp; Prevention</title>
+
+<link href="https://d186nm3tvejuoh.cloudfront.net/Css/cloudglobal.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/Scripts/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/js/autoTab.js"></script>
+
+
+<link href="Styles/cloudglobal_b2.css" rel="stylesheet" type="text/css" media="all" />
+
+<style>
+
+#ucForm_TextBoxPhone{
+	width:30px;
+}
+
+#ucForm_TextBoxPhone1{
+	width:30px;
+}
+
+</style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -26,6 +37,8 @@
         <!-- show the content with yes or no button to process logic -->
     </asp:Panel>
     
+    <uc:Header ID="Header1" runat="server" /> 
+
     <div runat="server" id="mainContainer">
     </div>
     <asp:Button ID="btnYes" runat="server" Text="Button" OnClick="btnYes_OnClick" Visible="false" />

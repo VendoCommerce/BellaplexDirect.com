@@ -6,7 +6,7 @@ using CSBusiness;
 using CSBusiness.CustomerManagement;
 using CSCore.Utils;
 using CSCore.DataHelper;
-using CSWeb.AU.Store;
+using CSWeb.Root.Store;
 using System.Web;
 using CSBusiness.Resolver;
 using CSBusiness.CreditCard;
@@ -387,12 +387,12 @@ namespace CSWeb.AU.UserControls
 
         }
 
-        protected void imgBtn_OnClick(object sender, ImageClickEventArgs e)
+        protected void imgBtn_OnClick(object sender, EventArgs e)
         {
             if (!validateInput())
             {
                 SaveData();
-                Response.Redirect(RedirectUrl + "?PId=408&CId=" + (int)CSBusiness.ShoppingManagement.ShoppingCartType.ShippingCreditCheckout);
+                Response.Redirect(RedirectUrl + "?PId=406&CId=" + (int)CSBusiness.ShoppingManagement.ShoppingCartType.ShippingCreditCheckout);
             }
 
 

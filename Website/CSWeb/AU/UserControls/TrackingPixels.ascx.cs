@@ -134,8 +134,7 @@ namespace CSWeb.AU.UserControls
         private void SetCartPagesPnl()
         {
             if (Request.RawUrl.ToLower().Contains("cart"))
-            {
-                //SetSteelHousePixel();
+            {                
                 pnlCartPages.Visible = true;
             }
             else
@@ -167,8 +166,7 @@ namespace CSWeb.AU.UserControls
             if (Request.RawUrl.ToLower().Contains("receipt"))
             {
                 pnlReceiptPage.Visible = true;
-                SetCurrentOrder();
-                //SetSteelHousePixelReceipt();
+                SetCurrentOrder();                
             }
 
         }

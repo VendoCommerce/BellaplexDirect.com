@@ -6,7 +6,7 @@ using CSBusiness;
 using CSBusiness.CustomerManagement;
 using CSCore.Utils;
 using CSCore.DataHelper;
-using CSWeb.AU.Store;
+using CSWeb.Root.Store;
 using System.Web;
 using CSBusiness.Resolver;
 using System.Data.SqlClient;
@@ -90,8 +90,10 @@ namespace CSWeb.AU.UserControls
         /// </summary>
         public void BindCountries(bool setValue)
         {
+
             ddlCountry.DataSource = CountryManager.GetActiveCountry().Where(x => x.Name == "Australia");
-            ddlCountry.DataBind();            
+            ddlCountry.DataBind();
+            
         }
 
         /// <summary>
@@ -175,7 +177,7 @@ namespace CSWeb.AU.UserControls
 
             if (CommonHelper.EnsureNotNull(txtZipCode.Text) == String.Empty)
             {
-                lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeErrorMsg");
+                lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeErrorMsg");
                 lblZiPError.Visible = true;
                 _bError = true;
             }
@@ -183,7 +185,7 @@ namespace CSWeb.AU.UserControls
             {
                 if (!CommonHelper.IsValidZipCodeAustralian(txtZipCode.Text))
                 {
-                    lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeErrorMsg");
+                    lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeValidationErrorMsg");
                     lblZiPError.Visible = true;
                     _bError = true;
 
@@ -220,7 +222,7 @@ namespace CSWeb.AU.UserControls
             if (!validateInput())
             {
                 SaveData();
-                Response.Redirect(RedirectUrl + "?PId=408&CId=" + (int)CSBusiness.ShoppingManagement.ShoppingCartType.ShippingCreditCheckout);
+                Response.Redirect(RedirectUrl + "?PId=406&CId=" + (int)CSBusiness.ShoppingManagement.ShoppingCartType.ShippingCreditCheckout);
             }
 
 

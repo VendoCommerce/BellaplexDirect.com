@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSWeb.AU.UserControls {
+namespace CSWeb.AU.UserControls{
     
     
     public partial class Header {

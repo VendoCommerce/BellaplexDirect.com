@@ -148,24 +148,6 @@ namespace CSWeb.AU.UserControls{
         protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
-        /// lblCountryError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCountryError;
-        
-        /// <summary>
-        /// ddlCountry control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCountry;
-        
-        /// <summary>
         /// lblStateError control.
         /// </summary>
         /// <remarks>
@@ -182,6 +164,24 @@ namespace CSWeb.AU.UserControls{
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlState;
+        
+        /// <summary>
+        /// lblCountryError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCountryError;
+        
+        /// <summary>
+        /// ddlCountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCountry;
         
         /// <summary>
         /// rfvZipCode control.
@@ -292,12 +292,12 @@ namespace CSWeb.AU.UserControls{
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// imgBtn control.
+        /// ImageButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button imgBtn;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
     }
 }

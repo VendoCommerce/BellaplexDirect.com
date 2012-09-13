@@ -228,6 +228,9 @@
     <Content Include="Content\Images\try_cta_video_poster.jpg" />
     <Content Include="Content\Images\try_video_2_poster.jpg" />
     <Content Include="contact.aspx" />
+    <Content Include="css\cloudglobal.css" />
+    <Content Include="css\global.css" />
+    <Content Include="js\s_code.js" />
     <Content Include="return.aspx" />
     <Content Include="privacy.aspx" />
     <Content Include="testimonials.aspx" />
@@ -323,10 +326,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="js\autoTab.js" />
-    <Content Include="js\jquery.cycle.js" />
-    <Content Include="js\jquery.js" />
-    <Content Include="js\jwplayer.js" />
-    <Content Include="js\player.swf" />
     <Content Include="jwplayer\jwplayer.js" />
     <Content Include="jwplayer\keranique.mp4" />
     <Content Include="jwplayer\player.swf" />
@@ -335,10 +334,8 @@
     <Content Include="jwplayer\swfobject.js" />
     <Content Include="jwplayer\video.mp4" />
     <Content Include="PostSale.aspx" />
-    <Content Include="preloader.swf" />
     <Content Include="receipt.aspx" />
     <Content Include="receipt_friendly.aspx" />
-    <Content Include="slider.swf" />
     <Content Include="Styles\Site.css" />
     <Content Include="UserControls\BillingCreditForm.ascx" />
     <Content Include="UserControls\BillingForm.ascx" />
@@ -364,7 +361,6 @@
     <None Include="Content\Flash\testimonial.flv" />
     <None Include="Content\Flash\testimonial.theora.ogv" />
     <None Include="Content\Flash\testimonial.webm" />
-    <Content Include="js\glow.zip" />
     <None Include="jwplayer\keranique.flv" />
     <None Include="jwplayer\Thumbs.db" />
     <None Include="Service References\HitLinks\CSWeb.HitLinks.Data.datasource">
@@ -377,7 +373,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="js\s_code.js" />
     <Content Include="Scripts\global.js" />
     <Content Include="Scripts\fancybox\blank.gif" />
     <Content Include="Scripts\fancybox\fancybox_loading.gif" />

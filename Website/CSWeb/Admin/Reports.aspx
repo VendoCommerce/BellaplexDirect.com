@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head2" runat="server">
-    <title>TryKeranique.com - Standard Report</title>
+    <title>BellaplexDirect.com - Standard Report</title>
     <style type="text/css">
         .day_range {
 width: 112px;

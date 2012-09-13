@@ -387,7 +387,7 @@ namespace CSWeb.Root.UserControls
 
         }
 
-        protected void imgBtn_OnClick(object sender, ImageClickEventArgs e)
+        protected void imgBtn_OnClick(object sender, EventArgs e)
         {
             if (!validateInput())
             {

@@ -1,10 +1,9 @@
 <%@Control Language="C#" AutoEventWireup="true" Inherits="CSWeb.AU.UserControls.CardDecline" CodeBehind="CardDecline.ascx.cs" %>
-  <%@ Register Src="Header_Cart.ascx" TagName="Header" TagPrefix="uc" %>
+  
 <asp:ScriptManager runat="server" ID="sm1">
 </asp:ScriptManager>
 <asp:UpdatePanel ID="upShippingForm" runat="server">
-    <ContentTemplate>
-    <uc:Header ID="Header2" runat="server" />
+    <ContentTemplate>  
     <div id="stretch_container">
     <div id="receipt_content" style="height: auto; width: 875px; position: relative;
         padding: 30px 60px 0 60px; color: #5c5c5c;">
@@ -27,7 +26,7 @@
                     <ItemTemplate>
                         <tr>
                              <td width="76%" valign="top" style="padding-bottom: 20px">
-                                <%# DataBinder.Eval(Container.DataItem, "AttributeValues[\"description\"].Value")%>
+                                <%# DataBinder.Eval(Container.DataItem, "LongDescription")%>
                             </td>
                             <td width="12%" valign="top" align="center">
                                 <%# DataBinder.Eval(Container.DataItem, "Quantity")%>
@@ -77,7 +76,30 @@
             </tr>
             <tr><td class="horizontal_dots2" colspan="3"></td></tr>
         </table>
-
+        <table bgcolor="#FFFFFF" border="0" cellpadding="5" cellspacing="0" width="300" class="shippingoptions">
+                  <tbody>
+                    <tr bgcolor="#E0E0E0">
+                      <td colspan="2"><strong>Choose your domestic shipping option:</strong></td>
+                    </tr>
+                    <tr>
+                      <td width="1">
+                          <asp:RadioButton ID="RadioButtonFirst" AutoPostBack="true" Checked="true" runat="server" 
+                              />
+                       </td>
+                      <td width="279">USPS First Class ($1.99)</td>
+                    </tr>
+                    <tr id="Tr1" runat="server" visible="false">
+                      <td><asp:RadioButton ID="RadioButtonPriority"   AutoPostBack="true" runat="server" 
+                              /> </td>
+                      <td>USPS Priority Mail ($12.95)</td>
+                    </tr>
+                    <tr id="Tr2" runat="server" visible="false">
+                      <td><asp:RadioButton ID="RadioButtonExpress" AutoPostBack="true" runat="server" 
+                              /> </td>
+                      <td>USPS Express Mail ($12.95)</td>
+                    </tr>
+                  </tbody>
+                </table>
         <div class="cartB" style="background: none">
         <div class="form_line clearfix">
     <div class="error-2">
@@ -132,7 +154,7 @@
                 <label class="label-1">
                     Shipping Address*</label>
                 <asp:TextBox ID="txtShippingAddress1" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
-            </div>
+            </div>            
             <div class="form_line clearfix">
                 <div class="error-1">
                 </div>
@@ -185,7 +207,7 @@
                 <label class="label-1">
                     Email*</label>
                 <asp:TextBox ID="txtEmail" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
-            </div>       
+            </div>
         </asp:Panel>
         <div class="form_line clearfix">
     <div class="error-2">
@@ -344,28 +366,15 @@
                     <asp:Label ID="lblCvvError" runat="server" Visible="false"></asp:Label></div>
                 <asp:TextBox ID="txtCvv" runat="server" CssClass="text-4" MaxLength="4"></asp:TextBox>
             </div>
-            <div class="form_line clearfix">
-                <label class="label-2">
-                    Send me new Product Updates
-                    <br />
-                    and Special Offers.</strong></label>
-                <input type="checkbox" checked="checked" class="checkbox-right" />
-            </div>
+            
             <div class="form_line_btn">
-                <asp:ImageButton ID="imgBtn" runat="server" ImageUrl="https://d37t4f22sfrbdk.cloudfront.net/Images/submit-rush_e2.gif"
-                    CssClass="form_line_center" OnClick="imgBtn_OnClick" />
+                <asp:Button runat="server" Text="Submit" OnClick="imgBtn_OnClick" />
             </div>
-            <div class="form_line_guarantee" style="display:none"><a href="#">View 30-Day Guarantee</a></div>
+            <br />
+
         </div>
   
   </div> </div>
- <div id="receipt_bottom"><img width="1024" height="44" src="https://dd991rkqr6iba.cloudfront.net/Images/receipt_bottom.png" /></div>
-<div id="footer">
-    <div id="footertext">
-        <p>
-            Copyright &copy; 2012. All rights reserved.</p>
-    </div>
-</div>
-<!-- end footer -->
+ 
     </ContentTemplate>
 </asp:UpdatePanel>

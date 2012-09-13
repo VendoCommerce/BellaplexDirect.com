@@ -183,7 +183,7 @@ namespace CSWeb.AU.UserControls
 
         protected void rblShippingDifferent_CheckedChanged(object sender, EventArgs e)
         {
-            pnlShippingAddress.Visible = !Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value);
+            pnlShippingAddress.Visible = Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value);
             
             SetShippingAddress();
             BindCartSummary();
@@ -192,7 +192,7 @@ namespace CSWeb.AU.UserControls
         //Sri Comments: User action may vary depends on the scenario
         public void SetShippingAddress()
         {
-            if (!Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value))
+            if (Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value))
             {
                 Address shippingAddress = new Address();
                 shippingAddress.FirstName = CommonHelper.fixquotesAccents(txtShippingFirstName.Text);
@@ -213,7 +213,7 @@ namespace CSWeb.AU.UserControls
 
         public bool validateInput()
         {
-            if (!Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value))
+            if (Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value))
             {
                 if (CommonHelper.EnsureNotNull(txtShippingFirstName.Text) == String.Empty)
                 {
@@ -423,7 +423,7 @@ namespace CSWeb.AU.UserControls
             //Recapture billing information if the user modified the information
             if (rId == 0)
             {
-                if (!Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value)) //override if the user select yes button
+                if (Convert.ToBoolean(rblShippingDifferent.SelectedItem.Value)) //override if the user select yes button
                 {
                     Address shippingAddress = new Address();
                     shippingAddress.FirstName = CommonHelper.fixquotesAccents(txtShippingFirstName.Text);
