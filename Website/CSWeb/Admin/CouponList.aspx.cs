@@ -10,7 +10,7 @@ namespace CSWeb.Admin
 {
     public partial class CouponList : BasePage
     {
-      
+
 
         #region Variable Declaration
         protected bool filter = false;
@@ -59,28 +59,7 @@ namespace CSWeb.Admin
 
             switch (e.CommandName)
             {
-                case "AddNew":
-                    pnlAddCategory.Visible = true;
-                    BindDiscountType();
-                    BindCoupons();
-                    break;
-                case "Cancel":
-                    pnlAddCategory.Visible = false;
-                    txtTitle.Text = "";
-                    ddlDiscountType.SelectedIndex = 0;
-                    break;
-                case "Add":
-                    if (Page.IsValid)
-                    {
-                        CSFactory.UpdateCoupon(0, CommonHelper.fixquotesAccents(txtTitle.Text), Math.Round(Convert.ToDecimal(txtPercentage.Text), 2), ddlDiscountType.SelectedValue.Equals("1"), cbVisible.Checked);
-                    }
 
-
-                    pnlAddCategory.Visible = false;
-                    txtTitle.Text = "";
-                    ddlDiscountType.SelectedIndex = 0;
-                    BindCoupons();
-                    break;
 
                 case "Back":
                     Response.Redirect("Main.aspx");
@@ -91,50 +70,38 @@ namespace CSWeb.Admin
         }
 
 
-        private void BindDiscountType()
-        {
-
-            ddlDiscountType.Items.Clear();
-            ddlDiscountType.DataSource = CommonHelper.BindToEnum(typeof(CouponTypeEnum));
-            ddlDiscountType.DataTextField = "Key";
-            ddlDiscountType.DataValueField = "Value";
-            ddlDiscountType.DataBind();
-
-     
-        }
-
 
         protected void dlCouponList_ItemDataBound(object sender, DataListItemEventArgs e)
         {
             CouponInfo couponItem = e.Item.DataItem as CouponInfo;
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-               
+
                 ITextControl lblTitle = e.Item.FindControl("lblTitle") as ITextControl;
                 ITextControl lblStatus = e.Item.FindControl("lblStatus") as ITextControl;
                 ITextControl lblDiscount = e.Item.FindControl("lblDiscount") as ITextControl;
-                ITextControl lblDiscountType = e.Item.FindControl("lblDiscountType") as ITextControl;   
+                ITextControl lblDiscountType = e.Item.FindControl("lblDiscountType") as ITextControl;
+                ITextControl lblTotalAmount = e.Item.FindControl("lblTotalAmount") as ITextControl;
                 LinkButton lbRemove = e.Item.FindControl("lbRemove") as LinkButton;
+                HyperLink hlEditLink = e.Item.FindControl("hlEditLink") as HyperLink;
                 lblTitle.Text = couponItem.Title;
-                lblDiscount.Text = String.Format("{0:0.##}", couponItem.Discount);
+               
+                lblTotalAmount.Text = String.Format("{0:C}", couponItem.TotalAmount);
                 lblStatus.Text = couponItem.Active ? "Active" : "Inactive";
-                lblDiscountType.Text = couponItem.IsPercentage ? "%" : "$";
-
-       
-            }
-
-            if (e.Item.ItemType == ListItemType.EditItem)
-            {
-                DropDownList ddlEditDiscountType = (DropDownList)e.Item.FindControl("ddlEditDiscountType");
-                ddlEditDiscountType.DataSource = CommonHelper.BindToEnum(typeof(CouponTypeEnum));
-                ddlEditDiscountType.DataTextField = "Key";
-                ddlEditDiscountType.DataValueField = "Value";
-                ddlEditDiscountType.DataBind();
-                if (couponItem.IsPercentage)
+                if ((int)couponItem.DiscountType == 1)
                 {
-                    ddlEditDiscountType.Items.FindByValue("1").Selected = true;
+                    lblDiscountType.Text = "%";
+                    lblDiscount.Text = String.Format("{0:0.##}%", Math.Round(couponItem.Discount,2));
                 }
+                else
+                {
+                    lblDiscountType.Text = "$";
+                    lblDiscount.Text = String.Format("{0:C}", couponItem.Discount);
+                }
+                hlEditLink.NavigateUrl = "CouponItem.aspx?cId=" + couponItem.CouponId;
+
             }
+
 
         }
 
@@ -148,23 +115,7 @@ namespace CSWeb.Admin
                     CSFactory.RemoveCoupon(couponId);
                     BindCoupons();
                     break;
-                case "Edit":
-                    dlCouponList.EditItemIndex = e.Item.ItemIndex;
-                    BindCoupons();
-                    break;
-                case "Cancel":
-                    dlCouponList.EditItemIndex = -1;
-                    BindCoupons();
-                    break;
-                case "Update":
-                    TextBox txtEditTitle = (TextBox)e.Item.FindControl("txtEditTitle");
-                    TextBox txtEditPercentage = (TextBox)e.Item.FindControl("txtEditPercentage");
-                    CheckBox cbEditVisible = (CheckBox)e.Item.FindControl("cbEditVisible");
-                    DropDownList ddlEditDiscountType = (DropDownList)e.Item.FindControl("ddlEditDiscountType");
-                     CSFactory.UpdateCoupon(couponId, CommonHelper.fixquotesAccents(txtEditTitle.Text.Trim()), Math.Round(Convert.ToDecimal(txtEditPercentage.Text), 2), ddlEditDiscountType.SelectedValue.Equals("1"), cbEditVisible.Checked);
-                    dlCouponList.EditItemIndex = -1;
-                    BindCoupons();
-                    break;
+
             }
         }
 

@@ -103,6 +103,7 @@
   <ItemGroup>
     <Content Include="Admin\Country.aspx" />
     <Content Include="Admin\CountryList.aspx" />
+    <Content Include="Admin\CouponItem.aspx" />
     <Content Include="Admin\CouponList.aspx" />
     <Content Include="Admin\css\Admin.css" />
     <Content Include="Admin\CustomerOrderDetail.aspx" />
@@ -454,6 +455,13 @@
     </Compile>
     <Compile Include="Admin\CountryList.aspx.designer.cs">
       <DependentUpon>CountryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CouponItem.aspx.cs">
+      <DependentUpon>CouponItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CouponItem.aspx.designer.cs">
+      <DependentUpon>CouponItem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\CouponList.aspx.cs">
       <DependentUpon>CouponList.aspx</DependentUpon>

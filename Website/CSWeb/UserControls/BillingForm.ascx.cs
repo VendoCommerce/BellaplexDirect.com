@@ -257,10 +257,6 @@ namespace CSWeb.Root.UserControls
                 contextData.CustomerInfo = CustData;
                 contextData.CartAbandonmentId = CSResolve.Resolve<ICustomerService>().InsertCartAbandonment(CustData, contextData);
 
-                CSWebBase.CSData.CustomerDALHelper.UpdateCartAbandonment(contextData.CartAbandonmentId,
-                    contextData.OrderAttributeValues["landing_url"].Value,
-                    contextData.OrderAttributeValues["ref_url"].Value);
-
                 Session["ClientOrderData"] = contextData;
             }
         }
