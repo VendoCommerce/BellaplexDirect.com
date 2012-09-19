@@ -46,12 +46,6 @@ namespace CSWeb.Root.UserControls
             if (!this.IsPostBack)
             {
                 BindData();
-                //Fire OrderConfirmation Test
-                // ACMG will be sending order conf. email
-                //OrderHelper.SendOrderCompletedEmail(orderId);
-
-                ////reset entire Context object
-                //this.CartContext.EmptyData();
             }
         }
 
@@ -62,7 +56,15 @@ namespace CSWeb.Root.UserControls
                 Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId);
 
                 for (int i = 0; i < orderData.SkuItems.Count; i++)
+                {
                     orderData.SkuItems[i].LoadAttributeValues();
+
+                    if (orderData.SkuItems[i].GetAttributeValue<bool>("onepay", false))
+                    {
+                        PanelOnePay.Visible = true;
+                        PanelMultiPay.Visible = false;
+                    }
+                }
 
                 dlordersList.DataSource = orderData.SkuItems;
                 dlordersList.DataBind();

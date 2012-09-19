@@ -168,4 +168,4 @@
 <div id="receipt_bottom">
     <img src="https://d186nm3tvejuoh.cloudfront.net/Images/receipt_bottom.png">
 </div>
-<uc:TrackingPixels ID="TrackingPixels" runat="
+<uc:TrackingPixels ID="TrackingPixels" runat="server" />

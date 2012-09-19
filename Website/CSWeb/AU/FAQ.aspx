@@ -2,213 +2,155 @@
 <%@ Register Src="UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 
 <%@ Register Src="UserControls/BillingForm.ascx" TagName="BillingFormControl" TagPrefix="uc" %>
+
 <%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="UserControls/Bottomcta.ascx" TagName="Bottomcta" TagPrefix="uc" %>
+<%@ Register Src="UserControls/footer.ascx" TagName="footer" TagPrefix="uc" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head id="Head1" runat="server">
 
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Order Bellaplex Now! - Wrinkle Reduction &amp; Prevention</title>
 
-<title>Keranique</title>
+<link href="https://d186nm3tvejuoh.cloudfront.net/Css/cloudglobal.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/Scripts/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/js/autoTab.js"></script>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link href="Styles/cloudglobal_b2.css" rel="stylesheet" type="text/css" media="all" />
+<style>
 
+#ucForm_TextBoxPhone{
+	width:30px;
+}
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("a.popup").fancybox({
-                'width': 600,
-                'height': 400,
-                'margin': 20,
-                'padding': 20,
-                'overlayColor': '#333',
-                'autoScale': false,
-                'centerOnScroll': true,
-                'transitionIn': 'none',
-                'transitionOut': 'none',
-                'type': 'iframe'
-            });
-        });
-        function show_slide(slide_number) {
-            if (slide_number == 1) {
-                $("#slider_1").show();
-                $("#slider_2").hide();
-                $("#slider_3").hide();
-            }
+#ucForm_TextBoxPhone1{
+	width:30px;
+}
 
-            if (slide_number == 2) {
-                $("#slider_1").hide();
-                $("#slider_2").show();
-                $("#slider_3").hide();
-            }
-
-            if (slide_number == 3) {
-                $("#slider_1").hide();
-                $("#slider_2").hide();
-                $("#slider_3").show();
-            }
-        }
-	</script>
-
-<link media="all" rel="stylesheet" href="Styles/cloudglobal_b2.css" type="text/css" />
-
- <script type='text/javascript' src='js/jwplayer.js'></script>
- 
- <style>
-	#part1 {
-		background-image:url(Content/Images/part1.jpg);
-	}
-	div.slider{
-		background: url("Content/Images/slider_bg.jpg") repeat-y scroll -45px top transparent;
-    padding-bottom: 11px;
-	}
-	
-	div#slider_2{
-		display:none;
-	}
-	
-	div#slider_3{
-		display:none;
-	}
-	</style>
-<script language="javascript">
-<!--    begin
-
-    var exit = true;
-    function exitwindow() {
-        var exit = false;
-        var url = 'dontgo.html';
-        var win = 'toolbar=0,directories=0,menubar=0,scrollbars=0,resizable=0,width=800,height=277';
-        if (exit)
-            open(url, 'WindowName', win);
-    }
-
-// end -->
-
-</script>
+</style>
 
 </head>
 
   <body>
-  <div id="container">
-    <div id="part1">
-      <div id="arrow"><img src="https://dd991rkqr6iba.cloudfront.net/Images/arrow.png" width="713" height="132" /></div>
-      
-        <uc:Header runat="server" /> 
 
-        <form id="form1" runat="server">
+  <uc:Header ID="Header1" runat="server" /> 
+
+  <div id="stretch_container">
+ <div id="home_left" class="otherleft">
+   <div id="left_txt">
+     <h2><img src="https://d186nm3tvejuoh.cloudfront.net/Images/head_faq.jpg" width="441" height="35" /></h2>
+     <p>       <a href="#1">What is Bellaplex<sup>&reg;</sup>?</a><br />
+       <a href="#2">What do each of the primary ingredients in Bellaplex<sup>&reg;</sup> do?</a><br />
+       <a href="#3">How do I use Bellaplex<sup>&reg;</sup>?</a><br />
+       <a href="#4">How many ounces are in a one month bottle?</a><br />
+       <a href="#5">What are the terms of the Bellaplex<sup>&reg;</sup> Risk Free Trial Program?</a><br />
+       <a href="#6">Can I change the date of when my subsequent Orders are sent?</a><br />
+       <a href="#7">What if I want to skip a month?</a><br />
+       <a href="#9">Can I call you for customer service?</a><br />
+       <a href="#10">How soon will you ship my order?</a><br />
+       <a href="#11">How long before my order arrives?</a><br />
+       <a href="#13">Is the package discreet?</a><br />
+       <a href="#14">Contact Us</a></p>
+
+        <ul id="QAlist">
+        
+        <a name="1"></a>
+        <li class="Q">What is Bellaplex<sup>&reg;</sup>?</li>
+        <li class="A"> Bellaplex<sup>&reg;</sup> is a superior facial cream which contains four of the most effective substances 
+          needed for real results. Bellaplex<sup>&reg;</sup> is unlike other skin creams. Most products use one or 
+          maybe two of these important ingredients necessary for results. Bellaplex uses all four: 
+          Matrxyl 3000<sup>&reg;</sup> + Hydrolyzed Collagen + Argireline<sup>&reg;</sup> + Hyaluronic Acid.</li>
+          
+          <a name="2"></a>
+        <li class="Q">What do each of the primary ingredients in Bellaplex<sup>&reg;</sup> do?</li>
+        <li class="A">Matrixyl™ 3000 promotes collagen production in the skin. Clinically proven, Matrixyl™ 3000, the key ingredient in Bellaplex, has been shown to:<br />
+          • Decrease the look of deep wrinkles by up to 44%<br />
+          • Visibly improve skin complexion and tone<br />
+          • Improve skin smoothness<br />
+          <br />
+          Argireline<sup>&reg;</sup> is a combination of amino acids that helps to reduce the appearance of surface wrinkles.<br />
+          <br />
+          Hyaluronic Acid is virtually unmatched in hydrating the skin because of its ability to retain water more effectively than other natural substances. Supplementation of HA provides increased smoothness &amp; softening to combat facial wrinkles.        </li>
+          
+          <a name="3"></a>
+        <li class="Q">How do I use Bellaplex<sup>&reg;</sup>?</li>
+        <li class="A">Simply apply Bellaplex<sup>&reg;</sup> every day to the desired areas on your face to diminish and prevent the look of fine lines and wrinkles. For best results, Bellaplex<sup>&reg;</sup> should be used both in the morning and at night before going to bed.</li>
+        
+        <a name="4"></a>
+        <li class="Q">How many ounces are in a one month bottle?</li>
+        <li class="A">Each bottle contains one-ounce and lasts about 1 month.</li>
+        
+        <a name="5"></a>
+        <li class="Q">What are the terms of the Bellaplex<sup>&reg;</sup> Risk Free Trial Program?</li>
+        <li class="A">WHEN YOU ORDER YOUR 2 RISK FREE BOTTLES TODAY, YOU GET DISCOUNTED SHIPPING AND PROCESSING of just $1.99 billed to your card today!  With our 30 Day Money Back Guarantee, if you're not completely satisfied, you can call within 30 days of receipt to cancel and return the product as instructed and will not be billed any additional amount. If you decide to keep the bottles, you will be billed in two easy payments of $69.95, the first 30 days and second payment 60 days following receipt of trial shipment.  Then unless you cancel, you will continue to receive a fresh 60 day supply every 2 months with the same guaranteed low price of just $69.95 per month plus $6.95 S&amp;P per shipment which will be conveniently billed to the card you provided today. By clicking &quot;Send My Trial&quot;, you authorize us to charge your card for each 2 bottle shipment per the terms described above. There is no commitment to continue and no minimum purchase.  You can call customer service at 1-800-515-1070 at any time to cancel. Each shipment you receive is covered by the same 30-day Money Back Guarantee, just call within 30 days and return the product within two weeks for a full refund of the purchase price!</li>
+        
+        <a name="6"></a>
+        <li class="Q">Can I change the date of when my subsequent Orders are sent?</li>
+        <li class="A">Absolutely! Any time you need to change your ship date.  Call our friendly and helpful Customer Service Department at (800) 515-1070 or email them by clicking <a href="mailto:bellaplexsupport@bellaplexdirect.com">here</a>.</li>
+        
+        <a name="7"></a>
+        <li class="Q">What if I want to skip a month?</li>
+        <li class="A">No problem at all...any time you need to skip a month, call our friendly and helpful customer service department: (800) 515-1070.</li>
+        
+        <a name="8"></a>
+        
+        <li class="Q">Can I call you for customer service?</li>
+        <li class="A">Yes! Our professional Customer Service Representatives are available during business hours.<br />
+          US &amp; Canada Toll Free: (800) 515-1070<br />
+          To order by phone, call (800) 515-1070<br />
+          <a href="mailto:bellaplexsupport@bellaplexdirect.com">Click Here</a> To E-Mail Us</li>
+          
+          <a name="10"></a>
+        <li class="Q">How soon will you ship my order?</li>
+        <li class="A">When you order before 6:00 pm, Eastern Standard Time, your order will normally ship the next business day. Orders placed after 6:00 pm EST, or on Saturday and Sunday, will normally ship within 48 hours.</li>
+        
+        <a name="11"></a>
+        <li class="Q">How long before my order arrives?</li>
+        <li class="A">The following are approximate delivery times from the ship date:<br />
+          First Class Mail - 5 to 8 business days<br />
+          Priority Mail - 2 to 4 business days<br />
+          Express Mail - 1 to 2 business days</li>
+          
+          
+          <a name="13"></a>
+        <li class="Q">Is the package discreet?</li>
+        <li class="A">Yes. Your order is delivered in a plain package, with your name and address.</li>
+        
+        <a name="14"></a>
+        <li class="Q">Contact Us:</li>
+        <li class="A"> To order by phone, call (800) 515-1070<br />
+          Our professional Customer Service Representatives are available during business hours.<br />
+          US &amp; Canada Toll Free: (800) 515-1070<br />
+          <a href="mailto:bellaplexsupport@bellaplexdirect.com">Click Here</a> To E-Mail Us </li>
+      </ul>
+
+     </div>
+ </div>
+ <div id="home_right">
+
+ <form id="form1" runat="server">
             <uc:BillingFormControl ID="ucForm" runat="server" RedirectUrl="Store/AddProduct.aspx" />
 
-
-            <uc:TrackingPixels runat="server" />
-
         </form>
-
-
-      
-      <div class="video"> 
-        <!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE -->
-
-        <div id="mediaspace">This text will be replaced</div>
-<script type="text/javascript">
-    jwplayer('mediaspace').setup({
-        'flashplayer': 'js/player.swf',
-        'autostart': 'true',
-        'file': 'jwplayer/keranique.mp4',
-        'controlbar': 'bottom',
-        'width': '350',
-        'height': '198'
-    });
-</script>
-        <!-- END OF THE PLAYER EMBEDDING --> 
-      </div>
-      <div class="doctor"> Approximately 50% of women experience some kind of hair loss by age 50. A woman’s hair loss can be triggered by a multitude of conditions and circumstances, but the Keranique™ System containing a product with 2% Minoxidil Solution was specifically formulated to address this!  Keranique™ hair products were specifically formulated to addess the embarrassing discovery of thinning hair for women of all ages and hair types. </div>
-      <div class="name1 red">- Brenda W.</div>
-        <div class="slider">
-       <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="969" height="468" id="preloader" align="middle">
-          <param name="movie" value="preloader.swf" />
-          <param name="quality" value="high" />
-          <param name="bgcolor" value="#ffffff" />
-          <param name="play" value="true" />
-          <param name="loop" value="true" />
-          <param name="scale" value="showall" />
-          <param name="menu" value="true" />
-          <param name="devicefont" value="false" />
-          <param name="salign" value="" />
-          <param name="allowScriptAccess" value="sameDomain" />
-          <param name="wmode" value="transparent" /> 
-          <!--[if !IE]>-->
-          <object type="application/x-shockwave-flash" data="preloader.swf" width="969" height="468">
-            <param name="movie" value="preloader.swf" />
-            <param name="quality" value="high" />
-            <param name="bgcolor" value="#ffffff" />
-            <param name="play" value="true" />
-            <param name="loop" value="true" />
-            <param name="scale" value="showall" />
-            <param name="menu" value="true" />
-            <param name="devicefont" value="false" />
-            <param name="salign" value="" />
-            <param name="allowScriptAccess" value="sameDomain" />
-            <param name="wmode" value="transparent" />
-            <!--<![endif]--> 
-            <div id="slider_1"> 
-              <img src="images/slider_image_1.jpg" border="0" usemap="#Map"  />
-              <map name="Map" id="Map">
-                <area shape="rect" coords="373,325,598,433" href="javascript:show_slide(2);" />
-                <area shape="rect" coords="598,327,834,435" href="javascript:show_slide(3);" />
-              </map>
-            </div>
-            <div id="slider_2"> 
-              <img src="images/slider_image_2.jpg" border="0" usemap="#Map2"  />
-              <map name="Map2" id="Map2">
-                <area shape="rect" coords="147,325,375,433" href="javascript:show_slide(1);" />
-                <area shape="rect" coords="601,327,837,435" href="javascript:show_slide(3);" />
-              </map>
-            </div>
-            <div id="slider_3"> 
-              <img src="images/slider_image_3.jpg" border="0" usemap="#Map3"  />
-              <map name="Map3" id="Ma3p">
-                <area shape="rect" coords="143,325,371,433" href="javascript:show_slide(1);" />
-                <area shape="rect" coords="370,327,606,435" href="javascript:show_slide(2);" />
-              </map>
-            </div>
-            <!--[if !IE]>-->
-          </object>
-          <!--<![endif]-->
-        </object>
-      </div>
-    </div>
-    <div id="part2">
-      <div class="quote1 grey"> “I began using Keranique conditioner, shampoo, follicle booster, and minoxidil starting in August '2010 because my hair was falling out and had stopped growing (I am 52 yrs. young.) My only hope was that my hair loss would stop. Well, not only did my hair stop falling out but it began to grow like a weed. I love the fact that it contains no sulfates and doesn't strip my hair color. Keranique delivers - and then some. An absolutely amazing product.” </div>
-      <div class="name2 red">- Nora N.</div>
-      <div class="spacer"><img src="https://dd991rkqr6iba.cloudfront.net/Images/spacer.png" width="410" height="20" /></div>
-      <div class="quote3 grey"> “I am presently using the shampoo, conditioner, follicle-boosting serum, and the fortifying mousse. I have only used it 3 times and already feel that my hair has more volume. I am anxious to see what results a full month of treatment brings.” </div>
-      <div class="name3 red">- Brenda W.</div>
-      <div class="quote2 grey"> “I am using the Keranique shampoo and conditioner. Within two weeks I can tell a difference. I would recommend these products.” </div>
-      <div class="name4 red">- Barbara P.</div>
-      <div class="spacer2"><img src="https://dd991rkqr6iba.cloudfront.net/Images/spacer.png" width="410" height="20" /></div>
-      <div class="quote4 grey"> “I was having trouble with thinning hair, so I tried Keranique hair growth kit and I have been using it for two months. My hair looks so much healthier and I'm not having the breakage problems I was having before. Also it’s not falling out like it was. So far I’m very happy with the results.” </div>
-      <div class="name5 red">- Deborah M.</div>
-      <div class="btn-bottom"><a href="#container" class="scroll"></a></div>
-            <div id="footer"> 
-      <p style="float:left">
-<a style="margin-left: 0" href="/index.aspx">Home</a>
-|
-<a href="/faq.aspx">FAQs</a>
-|
-<a href="/testimonials.aspx">Testimonials</a>
-|
-<a href="/contact.aspx">Contact Us</a>
-|
-<a href="/privacy.aspx">Privacy Policy</a>
-|
-<a href="/return.aspx">Return Policy</a>
-</p>
-      
-        © 2012 All Rights Reserved. </div>
-    </div>
  
+  </div> 
+  <div id="clear"></div>
+  
+
+
+</div>
+
+
+<uc:Bottomcta ID="Bottomcta1" runat="server" />
+
+<uc:footer ID="Footer1" runat="server" />
+
+<uc:TrackingPixels ID="TrackingPixels1" runat="server" />
+
+  <%--...--%>
+
+</body>

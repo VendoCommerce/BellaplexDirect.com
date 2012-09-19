@@ -753,6 +753,8 @@
     <Compile Include="Admin\VersionReport.aspx.designer.cs">
       <DependentUpon>VersionReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\FulfillmentHouse\Acmg.cs" />
+    <Compile Include="App_Code\FulfillmentHouse\OrderMotion.cs" />
     <Compile Include="AU\AuthorizeOrder.aspx.cs">
       <DependentUpon>AuthorizeOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -975,6 +977,7 @@
     <Compile Include="AU\UserControls\TrackingPixels.ascx.designer.cs">
       <DependentUpon>TrackingPixels.ascx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\OrderHelper.cs" />
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1002,8 +1005,6 @@
     <Compile Include="CVV.aspx.designer.cs">
       <DependentUpon>CVV.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\FulfillmentHouse\Acmg.cs" />
-    <Compile Include="App_Code\FulfillmentHouse\OrderMotion.cs" />
     <Compile Include="AuthorizeOrder.aspx.cs">
       <DependentUpon>AuthorizeOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1099,7 +1100,6 @@
     <Compile Include="Store\AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\OrderHelper.cs" />
     <Compile Include="Store\OrderValidation.aspx.cs">
       <DependentUpon>OrderValidation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

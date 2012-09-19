@@ -7,20 +7,10 @@
         <div id="cart_content" style="height: auto; width: 964px; position: relative; padding-top: 7px;
     padding-left: 60px">
     <div style="position: relative; width: 645px; height: 676px; color: #767676; font-size: 13px;
-        left: 0; top: 0; float: left; background: url(https://d186nm3tvejuoh.cloudfront.net/Images/cart_left.jpg);">
-        <div style="position: absolute; left: 5px; top: 275px; height: 135px; width: 628px;">
-            <p style="color: #00426a; font-size: 12px; line-height: 17px;">
-                <strong>*Terms &amp; Conditions</strong>: If you decide to keep the bottles, you
-                will be billed in two easy payments of $69.95, the first 30 days and second payment
-                60 days following receipt of trial shipment. Then unless you cancel, you will continue
-                to receive a fresh 60 day supply every 2 months with the same guaranteed low price
-                of just $69.95 per month plus $6.95 S&P per shipment which will be conveniently
-                billed to the card you provided today. By clicking "Order Securely", you authorize
-                us to charge your card for each 2 bottle shipment per the terms described above.
-                There is no commitment to continue and no minimum purchase. You can call customer
-                service at 1-800-515-1070 at any time to cancel. Each shipment you receive is covered
-                by the same 30-day Money Back Guarantee, just call within 30 days and return the
-                product within two weeks for a full refund of the purchase price!
+        left: 0; top: 0; float: left; background: url(https://d186nm3tvejuoh.cloudfront.net/Images/cart_left_au.jpg);">
+        <div style="position: absolute; left: 5px; top: 235px; height: 135px; width: 628px;">
+            <p style="color: #00426a; font-size: 12px; line-height: 15px;">
+                <strong>*Terms &amp; Conditions</strong>: We'll send you 2 bottles of Bellaplex to try RISK FREE for 30 days. You pay only $1.99 for shipping and processing today. If you like your results and want to continue looking younger, you don't have to do anything else. The card you provide will be charged 2 equal payments of $69.95 with the first payment 30 days after you receive your order and the final payment 30 days later. As a member of our Beauty Auto Ship Program and to ensure you continue to see results without running out of Bellaplex, we'll send you a new 60-day supply every 2 months, from the date of your order. By clicking the &quot;Order Securely&quot; button, you authorize that for your first and future shipments, the card you provide today will be automatically charged $69.95 every 30 days along with a small shipping and processing fee of $7.95 on the day your order ships. International shipments prices will be converted and charged in US Dollars. Other taxes and customs duties may apply. Remember you have our 30-Day Bottom of the Jar Guarantee with each shipment. If you're not completely delighted, call Customer Service at 0011-800-3216-7711 within 45 days from the date of your order to avoid further payments or for a full refund of the product-purchase price, less the shipping and processing. As a member of our Beauty Program, you are not required to continue. Cancel at any time. Please note: The-Try-It-Before-You-Buy-It Program is for first-time customers only. 
             </p>
         </div>
         <div style="position: absolute; left: 400px; top: 525px; height: 42px; width: 223px;">
@@ -35,7 +25,7 @@
                     BOTTLES TODAY, GET DISCOUNTED<br />
                     SHIPPING AND PROCESSING of just<br />$1.99 billed to your card today!</p>
         </div>
-        <div style="position: absolute; left: 97px; top: 74px; height: 170px; width: 162px;">
+        <div style="position: absolute; left: 97px; top: 74px; height: 170px; width: 172px;">
             <p style="color: #00426a; font-size: 12px; line-height: 17px;">
                 With our 30 Day Money Back Guarantee, if you're not completely satisfied, you can call within 30 days of receipt to cancel and return the product as instructed and will not be billed any additional amount.
             </p>

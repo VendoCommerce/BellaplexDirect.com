@@ -1,4 +1,4 @@
-<%@Page Language="C#" AutoEventWireup="true" Inherits="CSWeb.AU.Store.cart" EnableSessionState="True" %>
+﻿<%@Page Language="C#" AutoEventWireup="true" Inherits="CSWeb.AU.Store.cart" EnableSessionState="True" %>
 <%@ Register Src="UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <%@ Register Src="UserControls/ShippingCreditForm.ascx" TagName="ShippingCreditForm"
     TagPrefix="uc" %>
@@ -35,7 +35,7 @@
 <body>
 
 <div id="cart_header">
-<p id="phone_number">For Phone Orders Call: (800) 515-1070</p> 
+<p id="phone_number"></p> 
 </div>
 
 <div id="stretch_container">
