@@ -16,7 +16,7 @@
                 </div>
                 <label class="label-1">
                     First Name*</label>
-                <asp:TextBox ID="txtFirstName" TabIndex="100" MaxLength="100" CssClass="text-1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtFirstName" TabIndex="100" MaxLength="60" CssClass="text-1" runat="server"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -24,7 +24,7 @@
                     <asp:Label ID="lblLastNameError" runat="server" Visible="false" ForeColor="Red"></asp:Label></div>
                 <label class="label-1">
                     Last Name*</label>
-                <asp:TextBox ID="txtLastName" TabIndex="101" MaxLength="100" CssClass="text-1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtLastName" TabIndex="101" MaxLength="60" CssClass="text-1" runat="server"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -48,7 +48,7 @@
                 </div>
                 <label class="label-1">
                     City*</label>
-                <asp:TextBox ID="txtCity" TabIndex="104" MaxLength="50" CssClass="text-1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCity" TabIndex="104" MaxLength="60" CssClass="text-1" runat="server"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -100,7 +100,7 @@
                 </div>
                 <label class="label-1">
                     Email*</label>
-                <asp:TextBox ID="txtEmail" TabIndex="110" CssClass="text-1" runat="server" MaxLength="250"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" TabIndex="110" CssClass="text-1" runat="server" MaxLength="100"></asp:TextBox>
             </div>
             <div class="form_line2" style="text-align: right;">
                 <asp:ImageButton ID="ImageButton1" TabIndex="129" OnClick="imgBtn_OnClick" runat="server"

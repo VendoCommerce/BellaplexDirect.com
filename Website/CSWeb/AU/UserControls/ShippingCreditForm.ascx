@@ -149,7 +149,7 @@
                             <div class="left_field_wrap_2cl">
                                 First Name</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingFirstName" MaxLength="100" TabIndex="111" CssClass="text_field_1b"
+                                <asp:TextBox ID="txtShippingFirstName" MaxLength="60" TabIndex="111" CssClass="text_field_1b"
                                     runat="server"></asp:TextBox>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                             <div class="left_field_wrap_2cl">
                                 Last Name/Surname</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingLastName" MaxLength="100" TabIndex="112" CssClass="text_field_1b" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtShippingLastName" MaxLength="60" TabIndex="112" CssClass="text_field_1b" runat="server"></asp:TextBox>
                             </div>  
                         </div>
                         <div class="form_line clearfix">
@@ -191,7 +191,7 @@
                             <div class="left_field_wrap_2cl">
                                 City</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingCity" MaxLength="50" TabIndex="115" CssClass="text_field_1b" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtShippingCity" MaxLength="60" TabIndex="115" CssClass="text_field_1b" runat="server"></asp:TextBox>
                             </div>
                         </div>
                         <div class="form_line clearfix">
