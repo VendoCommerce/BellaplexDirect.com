@@ -124,7 +124,7 @@
                 </div>
                 <label class="label-1">
                     First Name*</label>
-                <asp:TextBox ID="txtShippingFirstName" runat="server" MaxLength="14" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtShippingFirstName" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -134,7 +134,7 @@
                 </div>
                 <label class="label-1">
                     Last Name*</label>
-                <asp:TextBox ID="txtShippingLastName" runat="server" MaxLength="14" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtShippingLastName" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -153,14 +153,14 @@
                     <asp:Label ID="lblShippingAddress1Error" runat="server" Visible="false"></asp:Label></div>
                 <label class="label-1">
                     Shipping Address*</label>
-                <asp:TextBox ID="txtShippingAddress1" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtShippingAddress1" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
             </div>            
             <div class="form_line clearfix">
                 <div class="error-1">
                 </div>
                 <label class="label-1">
                 </label>
-                <asp:TextBox ID="txtShippingAddress2" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtShippingAddress2" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -169,7 +169,7 @@
                     <asp:Label ID="lblShippingCityError" runat="server" Visible="false"></asp:Label></div>
                 <label class="label-1">
                     City*</label>
-                <asp:TextBox ID="txtShippingCity" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtShippingCity" runat="server" MaxLength="50" CssClass="text-1"></asp:TextBox>
             </div>
             <div class="form_line clearfix">
                 <div class="error-1">
@@ -206,7 +206,7 @@
                     <asp:Label ID="lblEmailError" runat="server" Visible="false"></asp:Label></div>
                 <label class="label-1">
                     Email*</label>
-                <asp:TextBox ID="txtEmail" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" MaxLength="250" CssClass="text-1"></asp:TextBox>
             </div>
         </asp:Panel>
         <div class="form_line clearfix">
@@ -232,7 +232,7 @@
                     </div>
                     <label class="label-1">
                         First Name*</label>
-                    <asp:TextBox ID="txtFirstName" runat="server" MaxLength="14" CssClass="text-1"></asp:TextBox>
+                    <asp:TextBox ID="txtFirstName" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
                 </div>
                 <div class="form_line clearfix">
                     <div class="error-1">
@@ -241,7 +241,7 @@
                     </div>
                     <label class="label-1">
                         Last Name*</label>
-                    <asp:TextBox ID="txtLastName" runat="server" MaxLength="14" CssClass="text-1"></asp:TextBox>
+                    <asp:TextBox ID="txtLastName" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
                 </div>
                 <div class="form_line clearfix">
                     <div class="error-1">
@@ -260,14 +260,14 @@
                         <asp:Label ID="lblAddress1Error" runat="server" Visible="false"></asp:Label></div>
                     <label class="label-1">
                         Billing Address*</label>
-                    <asp:TextBox ID="txtAddress1" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                    <asp:TextBox ID="txtAddress1" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
                 </div>
                 <div class="form_line clearfix">
                     <div class="error-1">
                     </div>
                     <label class="label-1">
                     </label>
-                    <asp:TextBox ID="txtAddress2" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                    <asp:TextBox ID="txtAddress2" runat="server" MaxLength="100" CssClass="text-1"></asp:TextBox>
                 </div>
                 <div class="form_line clearfix">
                     <div class="error-1">
@@ -276,7 +276,7 @@
                         <asp:Label ID="lblCityError" runat="server" Visible="false"></asp:Label></div>
                     <label class="label-1">
                         City*</label>
-                    <asp:TextBox ID="txtCity" runat="server" MaxLength="30" CssClass="text-1"></asp:TextBox>
+                    <asp:TextBox ID="txtCity" runat="server" MaxLength="50" CssClass="text-1"></asp:TextBox>
                 </div>
                 <div class="form_line clearfix">
                     <div class="error-1">

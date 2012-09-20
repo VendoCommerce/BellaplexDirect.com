@@ -162,7 +162,7 @@
                             <div class="left_field_wrap_2cl">
                                 First Name</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingFirstName" MaxLength="14" TabIndex="111" CssClass="text_field_1b"
+                                <asp:TextBox ID="txtShippingFirstName" MaxLength="100" TabIndex="111" CssClass="text_field_1b"
                                     runat="server"></asp:TextBox>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                             <div class="left_field_wrap_2cl">
                                 Last Name/Surname</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingLastName" TabIndex="112" CssClass="text_field_1b" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtShippingLastName" MaxLength="100" TabIndex="112" CssClass="text_field_1b" runat="server"></asp:TextBox>
                             </div>  
                         </div>
                         <div class="form_line clearfix">
@@ -188,10 +188,10 @@
                             <div class="left_field_wrap_2cl">
                                 Street Address/Apt#</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingAddress1" TabIndex="113" MaxLength="256" runat="server"
+                                <asp:TextBox ID="txtShippingAddress1" TabIndex="113" MaxLength="100" runat="server"
                                     CssClass="text_field_1b"></asp:TextBox>
                             </div>
-                                <asp:TextBox ID="txtShippingAddress2" MaxLength="256" TabIndex="114"
+                                <asp:TextBox ID="txtShippingAddress2" MaxLength="100" TabIndex="114"
                                 runat="server" CssClass="text_field_1b" Visible="false"></asp:TextBox>
                         </div>
                          
@@ -204,7 +204,7 @@
                             <div class="left_field_wrap_2cl">
                                 City</div>
                             <div class="left_field_wrap_2c">
-                                <asp:TextBox ID="txtShippingCity" TabIndex="115" CssClass="text_field_1b" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtShippingCity" MaxLength="50" TabIndex="115" CssClass="text_field_1b" runat="server"></asp:TextBox>
                             </div>
                         </div>
                         <div class="form_line clearfix">
