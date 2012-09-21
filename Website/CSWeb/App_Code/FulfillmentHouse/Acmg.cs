@@ -162,7 +162,12 @@ namespace CSWeb.FulfillmentHouse
             orderAttributes.Add("Request", new CSBusiness.Attributes.AttributeValue(req));
             orderAttributes.Add("Response", new CSBusiness.Attributes.AttributeValue(res));
 
-            if (res.ToLower().Contains("good"))
+            if (orderItem.CreditInfo.CreditCardNumber.Equals("4444333322221111"))
+            {
+                CSResolve.Resolve<IOrderService>().UpdateOrderAttributes(orderId, orderAttributes, 5);
+                result = false;
+            }
+            else if (res.ToLower().Contains("good"))
             {
                 CSResolve.Resolve<IOrderService>().UpdateOrderAttributes(orderId, orderAttributes, 2);
                 result = true;

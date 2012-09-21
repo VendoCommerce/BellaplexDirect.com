@@ -40,6 +40,24 @@ namespace CSWeb.Root.UserControls {
         protected global::System.Web.UI.WebControls.Literal LiteralTableRows;
         
         /// <summary>
+        /// LiteralFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralFirstName;
+        
+        /// <summary>
+        /// LiteralLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralLastName;
+        
+        /// <summary>
         /// LiteralPhone control.
         /// </summary>
         /// <remarks>
@@ -47,6 +65,24 @@ namespace CSWeb.Root.UserControls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralPhone;
+        
+        /// <summary>
+        /// LiteralFirstName_b control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralFirstName_b;
+        
+        /// <summary>
+        /// LiteralLastName_b control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralLastName_b;
         
         /// <summary>
         /// TrackingPixels control.

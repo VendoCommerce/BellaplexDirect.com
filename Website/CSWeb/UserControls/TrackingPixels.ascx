@@ -33,7 +33,7 @@
         // Begin Variable Declarations
         wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
         wa_pageName = location.pathname;  // you can customize the page name here
-        wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
+        wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
         // End Variable Declarations
         document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
         wa_rf = document.referrer; wa_sr = window.location.search;
@@ -88,7 +88,7 @@ screen.colorDepth + '&rs=' + escape(screen.width + ' x ' + screen.height) +
         // Begin Variable Declarations
         wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
         wa_pageName = location.pathname;  // you can customize the page name here
-        wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
+        wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
         // End Variable Declarations
         document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
         wa_rf = document.referrer; wa_sr = window.location.search;
@@ -206,7 +206,7 @@ screen.colorDepth + '&rs=' + escape(screen.width + ' x ' + screen.height) +
     // Begin Variable Declarations
     wa_account = "8B8D86949A8D9E91968E8A9A"; wa_location = 14;
     wa_pageName = location.pathname;  // you can customize the page name here
-    wa_MultivariateKey = '';    //  Set this variable to perform multivariate testing
+    wa_MultivariateKey = 'CONTROL';    //  Set this variable to perform multivariate testing
     // End Variable Declarations
     document.cookie = '__support_check=1;path=/'; wa_hp = 'http';
     wa_rf = document.referrer; wa_sr = window.location.search;

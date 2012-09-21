@@ -186,7 +186,7 @@ namespace CSWeb.Root.UserControls
             {
                 if (!CommonHelper.IsValidZipCode(txtZipCode.Text))
                 {
-                    lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeValidationErrorMsg");
+                    lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
                     lblZiPError.Visible = true;
                     _bError = true;
 

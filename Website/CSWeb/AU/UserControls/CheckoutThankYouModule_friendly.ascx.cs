@@ -18,8 +18,8 @@ namespace CSWeb.AU.UserControls
     public partial class CheckoutThankYouModule_friendly : System.Web.UI.UserControl
     {
         protected Literal LiteralSubTotal, LiteralShipping, LiteralTax, LiteralTotal,
-            LiteralName, LiteralAddress, LiteralCity, LiteralEmail, LiteralZip, LiteralState, LiteralCountry,
-            LiteralName_b, LiteralAddress_b, LiteralCity_b, LiteralZip_b, LiteralState_b, LiteralCountry_b, LiteralRushShipping, LiteralGoogleAnalytics, LiteralID, LiteralSid, LiteralOfferId,
+            LiteralFirstName, LiteralLastName, LiteralAddress, LiteralCity, LiteralEmail, LiteralZip, LiteralState, LiteralCountry,
+            LiteralFirstName_b, LiteralLastName_b, LiteralAddress_b, LiteralCity_b, LiteralZip_b, LiteralState_b, LiteralCountry_b, LiteralRushShipping, LiteralGoogleAnalytics, LiteralID, LiteralSid, LiteralOfferId,
             LiteralAddress2, LiteralAddress2_b, ltOfferDetails, ltOrderNumber;
 
         protected DataList dlordersList;
@@ -78,8 +78,8 @@ namespace CSWeb.AU.UserControls
                 }
 
 
-
-                LiteralName.Text = String.Format("{0} {1}", orderData.CustomerInfo.ShippingAddress.FirstName, orderData.CustomerInfo.ShippingAddress.LastName);
+                LiteralFirstName.Text = orderData.CustomerInfo.ShippingAddress.FirstName;
+                LiteralLastName.Text = orderData.CustomerInfo.ShippingAddress.LastName;
                 LiteralEmail.Text = orderData.CustomerInfo.Email;
                 LiteralAddress.Text = orderData.CustomerInfo.ShippingAddress.Address1;
                 LiteralAddress2.Text = orderData.CustomerInfo.ShippingAddress.Address2;
@@ -87,8 +87,9 @@ namespace CSWeb.AU.UserControls
                 LiteralZip.Text = orderData.CustomerInfo.ShippingAddress.ZipPostalCode;
                 LiteralState.Text = StateManager.GetStateName(orderData.CustomerInfo.ShippingAddress.StateProvinceId);
                 LiteralCountry.Text = CountryManager.CountryName(orderData.CustomerInfo.ShippingAddress.CountryId);
-
-                LiteralName_b.Text = String.Format("{0} {1}", orderData.CustomerInfo.BillingAddress.FirstName, orderData.CustomerInfo.BillingAddress.LastName);
+                                
+                LiteralFirstName_b.Text = orderData.CustomerInfo.BillingAddress.FirstName;
+                LiteralLastName_b.Text = orderData.CustomerInfo.BillingAddress.LastName;
                 LiteralAddress_b.Text = orderData.CustomerInfo.BillingAddress.Address1;
                 LiteralAddress2_b.Text = orderData.CustomerInfo.BillingAddress.Address2;
                 LiteralCity_b.Text = orderData.CustomerInfo.BillingAddress.City;

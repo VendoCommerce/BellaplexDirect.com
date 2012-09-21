@@ -185,7 +185,7 @@ namespace CSWeb.AU.UserControls
             {
                 if (!CommonHelper.IsValidZipCodeAustralian(txtZipCode.Text))
                 {
-                    lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeValidationErrorMsg");
+                    lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
                     lblZiPError.Visible = true;
                     _bError = true;
 

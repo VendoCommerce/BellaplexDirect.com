@@ -229,7 +229,8 @@ namespace CSWeb.AU.Store
                             clientScript = string.Concat(linkXml.Attribute("onclick").Value, clientScript);
 
                         linkXml.SetAttributeValue("onclick", clientScript + ";return false;");
-                        templateBody = templateBody.Replace(links[i].Value, linkXml.ToString());
+
+                        templateBody = templateBody.Replace(links[i].Value, Regex.Replace(linkXml.ToString(), "\\r\\n\\s*", string.Empty));
                     }
                 }
             }

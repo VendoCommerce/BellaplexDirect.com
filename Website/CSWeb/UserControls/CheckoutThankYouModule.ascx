@@ -156,7 +156,9 @@
             </tr>
             <tr>
                 <td width="132" valign="top">
-                    Name:
+                    First Name:
+                    <br />
+                    Last Name:
                     <br />
                     Address:
                     <br />
@@ -171,7 +173,9 @@
                     Email Address:
                 </td>
                 <td width="198" valign="top">
-                    <asp:Literal ID="LiteralName" runat="server"></asp:Literal><br />
+                    
+                    <asp:Literal ID="LiteralFirstName" runat="server"></asp:Literal><br />
+                    <asp:Literal ID="LiteralLastName" runat="server"></asp:Literal><br />
                     <asp:Literal ID="LiteralAddress" runat="server"></asp:Literal><br />
                     <asp:Literal ID="LiteralAddress2" runat="server"></asp:Literal><br />
                     <asp:Literal ID="LiteralCity" runat="server"></asp:Literal><br />
@@ -183,7 +187,9 @@
                     </p>
                 </td>
                 <td width="132" valign="top">
-                    Name:
+                    First Name:
+                    <br />
+                    Last Name:
                     <br />
                     Address:
                     <br />
@@ -195,9 +201,9 @@
                     <br />
                     Zip Code:
                 </td>
-                <td width="221" valign="top">
-                    <asp:Literal ID="LiteralName_b" runat="server">
-                    </asp:Literal><br />
+                <td width="221" valign="top">                    
+                    <asp:Literal ID="LiteralFirstName_b" runat="server" /><br />
+                    <asp:Literal ID="LiteralLastName_b" runat="server" /><br />
                     <asp:Literal ID="LiteralAddress_b" runat="server"></asp:Literal><br />
                     <asp:Literal ID="LiteralAddress2_b" runat="server"></asp:Literal><br />
                     <asp:Literal ID="LiteralCity_b" runat="server"></asp:Literal><br />
