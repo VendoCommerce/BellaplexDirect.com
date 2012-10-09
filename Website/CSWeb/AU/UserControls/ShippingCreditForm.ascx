@@ -255,11 +255,11 @@
         </div>
 
         <div style="text-align: center;">
-            <a name="trustlink" href="http://secure.trust-guard.com/certificates/6719" target="_blank"
+            <a name="trustlink" href="https://secure.trust-guard.com/certificates/6719" target="_blank"
                 onclick="var nonwin=navigator.appName!='Microsoft Internet Explorer'?'yes':'no'; window.open(this.href.replace('http', 'https'),'welcome','location='+nonwin+',scrollbars=yes,width=517,height='+screen.availHeight+',menubar=no,toolbar=no'); return false;"
                 oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by trust-guard \251 '+d.getFullYear()+'.'); return false;">
                 <img name="trustseal" alt="Security Seal" style="border: 0; margin-bottom: 6px;"
-                    src="http://seals.trust-guard.com/security-6719-header.gif" /></a>
+                    src="https://seals.trust-guard.com/security-6719-header.gif" /></a>
             <br />
             <img src="https://d186nm3tvejuoh.cloudfront.net/Images/ssl_secured.png" height="34"
                 width="115" />

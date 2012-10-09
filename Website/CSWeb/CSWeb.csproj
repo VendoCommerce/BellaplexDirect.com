@@ -311,7 +311,6 @@
     <Content Include="Content\Images\rect.gif" />
     <Content Include="Content\Images\save.gif" />
     <Content Include="Content\Images\yes_btn.png" />
-    <Content Include="CSWeb.Publish.xml" />
     <Content Include="header_cart.asp" />
     <Content Include="index.aspx" />
     <Content Include="FusionCharts\FCF_Area2D.swf" />

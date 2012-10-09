@@ -262,7 +262,7 @@ namespace CSWeb
             List<CSBusiness.Version> list = (CSFactory.GetCacheSitePref()).VersionItems;
             CSBusiness.Version item = list.Find(x => x.Title.ToLower() == version);
             if (item != null)
-                versionName = item.ShortName;
+                versionName = item.Title;
 
             return versionName;
         }

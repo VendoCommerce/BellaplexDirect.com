@@ -70,32 +70,42 @@ namespace CSWeb.Admin
            
             //Update Version List information
            foreach (ReportFields item in dtCollectionList[1])
-            {
-                if (HitLinkVisitor.ContainsKey(item.Title))
-                {
-                    decimal visitor = Convert.ToDecimal(HitLinkVisitor[item.Title].ToString());
-                    visitor = Math.Abs(visitor);
+           {
+               decimal visitor = 0;
+               if (item.Title.ToLower().Equals(item.ShortName.ToLower()))
+               {
+                   if (HitLinkVisitor.ContainsKey(item.Title))
+                   {
+                       visitor += Convert.ToDecimal(HitLinkVisitor[item.Title].ToString());
+                       visitor = Math.Abs(visitor);
+                   }
+               }
+               else
+               {
+                   //Added this to fix bug of orderhelper.getversionname()
+                   if (HitLinkVisitor.ContainsKey(item.Title))
+                   {
+                       visitor += Convert.ToDecimal(HitLinkVisitor[item.Title].ToString());
+                   }
+                   if (HitLinkVisitor.ContainsKey(item.ShortName.ToLower()))
+                   {
+                       visitor += Convert.ToDecimal(HitLinkVisitor[item.ShortName.ToLower()].ToString());
+                   }
+                   visitor = Math.Abs(visitor);
+               }
+               item.UniqueVisitors = visitor;
 
-                    item.UniqueVisitors = visitor;
-
-                    if (visitor > 0)
-                    {
-
-                        item.Conversion = Math.Round((Convert.ToDecimal(item.TotalOrders) * 100) / visitor, 1);
-                        item.RevenuePerVisit = Convert.ToDecimal(item.TotalRevenue) / visitor;
-                    }
-                    else
-                    {
-                        item.Conversion = 0;
-                        item.RevenuePerVisit = 0;
-                    }
-                }
-            else
-            {
-                item.Conversion = 0;
-                item.RevenuePerVisit = 0;
-            }
-            }
+               if (visitor > 0)
+               {
+                   item.Conversion = Math.Round((Convert.ToDecimal(item.TotalOrders) * 100) / visitor, 1);
+                   item.RevenuePerVisit = Convert.ToDecimal(item.TotalRevenue) / visitor;
+               }
+               else
+               {
+                   item.Conversion = 0;
+                   item.RevenuePerVisit = 0;
+               }
+           }
 
 
             dlVersionCategoryList.DataSource = CSFactory.GetAllVersionCateogry();
