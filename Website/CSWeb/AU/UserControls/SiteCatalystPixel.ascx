@@ -1,6 +1,6 @@
 <%@Control Language="C#" AutoEventWireup="true" CodeBehind="SiteCatalystPixel.ascx.cs" Inherits="CSWeb.AU.UserControls.SiteCatalystPixel" %>
 
- <!-- HX: B2 - Home -->  
+ <%--<!-- HX: B2 - Home -->  
    <!-- SiteCatalyst code version: H.24.4.
 Copyright 1996-2012 Adobe, Inc. All Rights Reserved
 More info available at http://www.omniture.com -->
@@ -36,3 +36,4 @@ More info available at http://www.omniture.com -->
 //--></script><noscript><img src="https://conversionsystems1.112.2o7.net/b/ss/convconvtrykeranique/1/H.24.4--NS/0"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.24.4. -->
+--%>

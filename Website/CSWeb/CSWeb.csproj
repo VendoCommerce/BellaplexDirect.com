@@ -231,7 +231,6 @@
     <Content Include="contact.aspx" />
     <Content Include="css\cloudglobal.css" />
     <Content Include="css\global.css" />
-    <Content Include="js\s_code.js" />
     <Content Include="return.aspx" />
     <Content Include="privacy.aspx" />
     <Content Include="testimonials.aspx" />
